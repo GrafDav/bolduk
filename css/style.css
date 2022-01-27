@@ -1,6 +1,35 @@
+@font-face {
+  font-family: "Kaushan";
+  src: url(../fonts/KaushanScript-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url(../fonts/Montserrat-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Raleway_Black";
+  src: url(../fonts/Raleway-Black.woff2);
+}
+
+@font-face {
+  font-family: "Raleway_Bold";
+  src: url(../fonts/Raleway-Bold.woff2);
+}
+
+@font-face {
+  font-family: "Raleway_SemiBold";
+  src: url(../fonts/Raleway-SemiBold.woff2);
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #2d3033;
@@ -51,6 +80,7 @@ h6 {
 }
 
 .nav {
+  font-family: "Raleway_SemiBold", sans-serif;
   display: inline-block;
   vertical-align: top;
   margin: 0 10px;
@@ -87,7 +117,7 @@ h6 {
 
 .banner_abovetitle {
   margin-bottom: 15px;
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan", sans-serif;
   font-size: 64px;
   font-weight: 400;
   text-transform: capitalize;
@@ -96,6 +126,7 @@ h6 {
 }
 
 .banner_title {
+  font-family: "Monserrat", sans-serif;
   font-size: 144px;
   font-weight: 700;
   text-transform: uppercase;
