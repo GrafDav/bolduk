@@ -141,7 +141,7 @@ img {
       rgba(237, 215, 137, 0.9) 0%,
       rgba(233, 130, 131, 0.9) 100%
     ),
-    url(../images/banner/Rectangle\ 2.jpg) center no-repeat;
+    url(../images/01_banner/Rectangle\ 2.jpg) center no-repeat;
   background-size: cover;
   /* width: 100%;
   height: 100vh; */
@@ -304,7 +304,7 @@ img {
 }
 
 .about__item {
-  width: 31%;
+  width: 30%;
   background-color: #95e1d3;
   position: relative;
 }
@@ -315,6 +315,10 @@ img {
 
 .about__item:hover .about__img {
   transform: translate3d(-16px, -16px, 0);
+}
+
+.about__item:hover .about__text {
+  opacity: 1;
 }
 
 .about__img {
@@ -328,6 +332,7 @@ img {
 }
 
 .about__text {
+  width: 100%;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -335,4 +340,140 @@ img {
   text-transform: uppercase;
   text-align: center;
   position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: opacity 0.2s linear;
+}
+
+/* ---------- futures ---------- */
+.futures {
+  margin-top: 108px;
+  background-color: #95e1d3;
+}
+
+.futures__items {
+  display: flex;
+}
+
+.futures__item {
+  flex: 1;
+  border-left: 1px solid #fff;
+  text-align: center;
+  color: #fff;
+}
+
+.futures__item:last-child {
+  border-right: 1px solid #fff;
+}
+
+.futures__number {
+  font-family: Raleway700;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  padding: 83px 0 16px 0;
+}
+
+.futures__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 58px;
+}
+
+/* ---------- amazing ---------- */
+
+.amazing {
+  display: flex;
+  margin: 120px 0 120px 0;
+  padding-bottom: 60px;
+  /* flex-wrap: wrap; */
+}
+
+.amazing__item {
+  flex: 1;
+  padding-left: 120px;
+  position: relative;
+}
+
+.amazing__icon {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  z-index: 2;
+  margin-right: 40px;
+}
+
+.amazing__title {
+  font-family: Raleway700;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 14px;
+}
+
+.amazing_text {
+  padding-top: 33px;
+}
+
+/* ---------- devices ---------- */
+
+.devices {
+  background: linear-gradient(#ffffffcc, #ffffffcc),
+    url(../images/05_devices/unsplash_lpjb_UMOyx8.jpg) center no-repeat;
+  background-size: cover;
+  padding: 30px 0 60px 0;
+}
+
+.devices__all {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.ipad {
+  background-image: url(../images/05_devices/Rectangle\ 10.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 55%;
+}
+
+.iphone {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.iphone img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(100%, -10%);
+  height: 80%;
+}
+
+/* ---------- servise ---------- */
+
+.servise {
+  margin-bottom: ;
+}
+
+.servise__info {
+  display: flex;
+  padding-top: 42px;
+}
+
+.info__item {
+  flex: 1;
 }
