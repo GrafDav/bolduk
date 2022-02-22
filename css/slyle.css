@@ -87,9 +87,6 @@ img {
   align-items: center;
 }
 
-.header__logo {
-}
-
 .header__nav {
   font-family: Raleway600;
   font-weight: 600;
@@ -464,10 +461,6 @@ img {
 }
 
 /* ---------- servise ---------- */
-
-.servise {
-  margin-bottom: ;
-}
 
 .servise__info {
   display: flex;
